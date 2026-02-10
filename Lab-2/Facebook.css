@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #262626;
+}
+
+/* Center horizontally + vertically */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Optional phone mockup */
+.phone-mockup {
+  width: 320px;
+  height: 520px;
+  border-radius: 35px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-screen {
+  width: 260px;
+  height: 460px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ffdc80, #fcaf45, #f77737, #fd1d1d, #c13584, #833ab4);
+  opacity: 0.9;
+}
+
+/* Right column */
+.right {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 22px 28px;
+  text-align: center;
+}
+
+.ig-logo {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 10px 0 25px;
+  letter-spacing: -1px;
+}
+
+/* Form */
+input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4cb5f9;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #2ea7f6;
+}
+
+/* OR separator */
+.or-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.line {
+  height: 1px;
+  background: #dbdbdb;
+  flex: 1;
+}
+
+.or-text {
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Social + links */
+.fb-login {
+  display: inline-block;
+  text-decoration: none;
+  color: #385185;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.forgot {
+  display: inline-block;
+  text-decoration: none;
+  color: #00376b;
+  font-size: 12px;
+}
+
+/* Signup card */
+.signup {
+  margin-top: 10px;
+  padding: 18px;
+}
+
+.signup p {
+  font-size: 14px;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  margin-top: 18px;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+/* Responsive: hide phone on small screens */
+@media (max-width: 820px) {
+  .phone-mockup {
+    display: none;
+  }
+  .page {
+    gap: 0;
+  }
+}
